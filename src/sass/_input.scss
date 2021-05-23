@@ -1,0 +1,92 @@
+.page-title {
+  margin-top: 30px;
+  font-size: 30px;
+  color: #1466b3;
+}
+
+.input {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding: 10px 15px;
+
+  width: 700px;
+  font-size: 30px;
+  line-height: 1.4;
+  color: #1466b3;
+  background-color: #d9e1e1;
+  border-color: #438ea7;
+}
+
+.input::placeholder {
+  color: #75a5ca;
+}
+
+.input:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px #75a5ca;
+}
+
+.countries {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  padding: 15px;
+
+  background-color: #d9e1e1;
+  border: 2px solid #75a5ca;
+}
+
+.country-container {
+  display: flex;
+}
+
+.title {
+  margin-bottom: 15px;
+  font-size: 30px;
+  color: #1466b3;
+}
+
+.country-description {
+  margin-right: 40px;
+}
+
+.subtitle {
+  margin-bottom: 15px;
+
+  font-size: 24px;
+  color: #1466b3;
+}
+
+.response-text {
+  font-size: 20px;
+  color: #347bbb;
+}
+
+.language {
+  margin-left: 20px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.decoration {
+  color: #347bbb;
+}
+
+.countries-list {
+  padding: 0 15px;
+  width: 600px;
+  background-color: #d9e1e1;
+  border: 2px solid #75a5ca;
+  font-size: 30px;
+  color: #1466b3;
+}
+
+.countries-list .item {
+  padding: 10px 0;
+}
+
+.countries-list .item:not(:last-child) {
+  border-bottom: 1px solid #75a5ca;
+}
