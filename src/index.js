@@ -14,7 +14,7 @@ function onInputTyping(el) {
   const input = el.target.value.trim();
   refs.countries.innerHTML = '';
 
-  if (!input || typeof value == 'undefined') {
+  if (!input) {
     return;
   }
   
