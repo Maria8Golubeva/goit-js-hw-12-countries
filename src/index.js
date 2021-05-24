@@ -10,13 +10,15 @@ var debounce = require('lodash.debounce');
 
 refs.input.addEventListener('input', debounce(onInputTyping, 500));
 
-function onInputTyping() {
-  if (refs.input.value) {
-    const input = refs.input.value;
-
-    fetchCountry(input).then(renderCountriesOrCard);
-  }
+function onInputTyping(el) {
+  const input = el.target.value.trim();
   refs.countries.innerHTML = '';
+
+  if (!input || typeof value == 'undefined') {
+    return;
+  }
+  
+  fetchCountry(input).then(renderCountriesOrCard);
 }
 
 function renderCountriesOrCard(country) {
